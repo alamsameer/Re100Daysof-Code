@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget app</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/budget app/scss/budget.css" />
+  </head>
+  <body>
+   <header> <h1>Budget app</h1></header>
+    <main class="container-main">
+      <form id="budget-form" class="flex-center-column">
+        <div id="budget-feedback" class="flex-center-row hide "></div>
+        <label for="">Enter your Amount</label>
+        <input type="number" id="budget-input" />
+        <input type="submit" id="submit-budget" value="Add" />
+      </form>
+      <form id="expense-form" class="flex-center-column">
+        <div id="expense-feedback" class="flex-center-row  hide"></div>
+       <label for="">Enter your item name</label>
+        <input type="text" id="expense-item" />
+        <label>Enter your expense amount</label>
+        <input type="number" id="expense-amount" />
+        <input type="submit" value="Add expense" id="submit-expense" />
+      </form>
+      <section id="total-feedback" >
+        <div class="flex-row space">
+          <div >    
+            <h3>  <span class="budget-icon"><i class="fas fa-money-bill-alt fa-2x" style="color:blue"></i></span></h3>
+            <h3 id="budget">$0</h3>
+          </div>
+          <div>
+            <h3> <span class="expense-icon"><i class="far fa-credit-card fa-2x"  style="color:blue"></i></span></h3>
+            <h3 id="expense">$0</h3>
+          </div>
+          <div>
+            <h3>    <span class="balance-icon"><i class="fas fa-dollar-sign fa-2x"style="color:blue"></i></span></h3>
+            <h3 id="balance">$0</h3>
+          </div>
+        </div>
+      </section>
+      <section id="expense-list">
+        <div  class="flex-row gap">
+          <h3>Expense</h3>
+          <h3>price</h3>
+          <h3></h3>
+        </div>
+        <div class="flex-row " id="expense-detail">
+          <!-- <div class="flex-row gap">
+            <h3 class="title">title</h3>
+            <h3 class="amount">amount</h3>
+            <div class="btns">
+              <a href="" class="edit" data-id="${expense.id}">edit</a>
+              <a href="" class="delete" data-id="${expense.id}">delete</a>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <script src="budget.js"></script>
+  </body>
+</html>

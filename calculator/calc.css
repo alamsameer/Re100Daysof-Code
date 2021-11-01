@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height:100vh;
+    background:rgb(230, 226, 226);
+}
+button{
+     border: none;
+     border-radius: .4em;
+    color: blue;
+    margin: .1em;
+    font-size: 1.4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+button:hover{
+  color: white;
+  background-color: rgb(46, 62, 204);
+}
+.calc-container{
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    box-shadow: .1em .1em 1em white,
+    -.1em -.1em 1em ;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns:repeat(4,4em);
+    grid-template-rows: repeat(5,4em);
+
+
+}
+.output{
+    min-height: 5em;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    word-break: break-all;
+    word-wrap: break-word;
+    background: rgb(46, 62, 204);
+}
+.output .previousOperand{
+    /* margin: .4em; */
+    font-size: 1.5em;
+
+}
+.output .currentOperand{
+    font-size: 2.5em;
+}
+.span2{
+  grid-column: span 2;  
+}

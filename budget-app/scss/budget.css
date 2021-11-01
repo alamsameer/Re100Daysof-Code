@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&display=swap");
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: capitalize;
+  gap: 1em;
+}
+
+input {
+  width: 10em;
+  border-radius: 1em;
+  border: none;
+  margin: .5em;
+  padding: .4em;
+}
+
+input[type=submit] {
+  width: 7em;
+  padding: .5em;
+  background-color: green;
+  color: white;
+  font-size: .9em;
+  font-weight: 600;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  display: block;
+  width: 10em;
+  border: 2px solid;
+}
+
+input[type=text] {
+  border: 2px solid;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {
+  padding: 1em;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+}
+
+#budget-form {
+  padding: 2em;
+  margin: .8em;
+  height: 10em;
+  border-radius: 1em;
+  background-color: #A73489;
+}
+
+#budget-form .hide {
+  visibility: hidden;
+}
+
+#budget-form .show-item {
+  visibility: visible;
+}
+
+#expense-form {
+  padding: 2em;
+  margin: .8em;
+  border-radius: 1em;
+  background-color: #FF3D68;
+}
+
+#expense-form .hide {
+  visibility: hidden;
+}
+
+#expense-form .show-item {
+  visibility: visible;
+}
+
+#total-feedback {
+  padding: 2em;
+  margin: .8em;
+  border: 2px solid;
+  border-radius: 1em;
+  background-color: white;
+}
+
+#total-feedback .space {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#expense-list {
+  margin: .8em;
+  padding: 2em;
+  background-color: #FF6767;
+  border-radius: 1em;
+}
+
+#expense-list .gap {
+  gap: 4em;
+}
+
+@media screen and (min-width: 620px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25em 25em;
+        grid-template-columns: 25em 25em;
+  }
+  #expense-form {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/3/2;
+  }
+}
+/*# sourceMappingURL=budget.css.map */

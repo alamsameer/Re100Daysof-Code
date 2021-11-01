@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:hsl(172, 67%, 45%);
+    --white: hsl(0, 0%, 100%);
+    --dark-green:rgb(6, 95, 95);
+    --dark-gray-1: hsl(186, 14%, 43%);
+    --dark-gray-2:hsl(184, 14%, 56%);
+    --light-gray-1:hsl(187, 41%, 84%);
+    --light-gray-2:hsl(189, 41%, 97%);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background:var(--light-gray-1);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: white;
+    padding: 1.1em;
+    border-radius: 1em 1em .5em .5em;
+}
+@media screen  and (min-width:620px){
+    .container{
+        display: grid;
+        grid-template-columns: 20em 20em;
+        flex-direction: row;
+    }
+    
+}
+label{
+    display: block;
+    color: var(--dark-gray-2);
+}
+
+input{
+    background:var(--light-gray-2);
+    border: none;
+    padding: .5em;
+    margin: .8em 0 .8em 0;
+    color: var(--dark-green);
+    font-weight: 700;
+    font-size: 1em;
+    border-radius:.4em ;
+}
+input:active{
+    border: none;
+    outline: none;
+}
+.tip-percent{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: .8em 0 .8em 0;
+}
+.tip-grid{
+    width: 5.5em;
+    padding: .5em;
+    text-align: center;
+    margin: .4em;
+    color: white;
+    background-color: var(--dark-green);
+    border-radius: .4em;
+    font-weight: 800;
+}
+.tip-grid:hover{
+   color: var(--dark-green);
+    background:var(--primary-color);
+}
+.show{
+    background: var(--dark-green);
+   border-radius:.5em ;
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   justify-content: center;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em;
+    font-size: .8em;
+    color: white;
+    text-transform: capitalize;
+}
+.text-color{
+    color: var(--primary-color);
+}
+#reset{
+    width: 80%;
+    padding: .5em;
+    margin: 1.5em;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--dark-green);
+    font-weight: 700;
+    letter-spacing:.2em ;
+    border-radius: .3em;
+}
+@media screen  and(min-width:620px) {
+    #reset{
+        margin-top: 2em;
+
+}
+    
+}
