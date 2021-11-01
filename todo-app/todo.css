@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(230,226,226);
+}
+header{
+    height: 15rem;
+    width: 100%;
+    justify-content:center;
+    gap: 2rem;
+    background:  url("./images/bg-mobile-light.jpg") no-repeat center;
+    background-size: cover;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+.checked{
+    text-decoration: line-through;
+}
+.delete:hover{
+    transform: scale(1.4);
+}
+.toggle{
+    position: absolute;
+}
+
+.head-todo{
+    position: relative;
+    width: 80vw;
+    color: white;
+    justify-content: space-between;
+}
+input{
+    min-width: 15rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-right: .5rem;
+}
+.flex-column{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+ul{
+    width: 100%;
+    /* padding: 1rem; */
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 2px solid;
+    padding: .5rem;
+    margin: .4rem;
+}
+
+.List{
+    position: relative;
+    min-width: 15rem;
+    top: -3em;
+    left: -.8rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: .2em .2em .2em,
+    -.2em .2em .2em;
+    
+}
+@media screen and (min-width:720px) {
+    header{
+        background-image: url("./images/bg-desktop-light.jpg");
+    }
+    .List{
+        width: 20rem;
+    }
+    
+}

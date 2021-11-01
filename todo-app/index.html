@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body class="flex-column">
+    <header class="flex-column">
+      <div class="flex-row head-todo">
+        <h1>T O D O</h1>
+        <div class="btn-container">
+          <button class="clearLi"><i class="fas fa-sync"></i></button>
+          <!-- <button class=".toggle">
+            <span><i class="fas fa-moon"></i></span
+            ><span><i class="far fa-sun" style="color: white"></i></span>
+          </button> -->
+        </div>
+      </div>
+      <form>
+        <input type="text" placeholder="Add to do" class="text" />
+        <span class="submit"><i class="fas fa-plus"></i></span>
+        <!-- <input id="submit" type="submit" value="Add" /> -->
+        <!-- <label for="submit"><i class="fas fa-plus"></i></label> -->
+      </form>
+    </header>
+    <section class="todos flex-column">
+      <div class="List">
+        <ul class="todoList"></ul>
+      </div>
+    </section>
+    <script src="todo.js"></script>
+  </body>
+</html>
