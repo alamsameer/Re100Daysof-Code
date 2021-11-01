@@ -1,0 +1,217 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --Dark-blue:hsl(233, 26%, 24%);
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 58%, 62%);
+  --Grayish-Blue: hsl(233, 8%, 62%);
+--Light-Grayish-Blue: hsl(220, 16%, 96%);
+--Very-light-Gray: hsl(0, 0%, 98%);
+--White: hsl(0, 0%, 100%)
+}
+body{
+ font-family: serif;
+ line-height: 1.4em;
+ 
+}
+.flex-nav{
+  padding:.8em 2em ;
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+}
+h1,h2,h3,h4{
+  font-family: sans-serif;
+  color: rgb(105, 96, 96);
+  line-height: 1.4em;
+}
+.links{
+  position: absolute;
+  top: 3.5em;
+  background: white;
+  border: 1px solid green;
+  border-radius: 1em;
+}
+.margin-top{
+  margin-top: .8em;
+}
+.links>ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 2em; 
+}
+.links>ul>a>li{
+  text-decoration: none;
+  margin: 0 1em;
+  padding: 1em;
+  font-size: 1.2em;
+}
+.hide{
+  visibility: hidden;
+
+}
+a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-icons{
+  position: relative;
+}
+.icons{
+  position: absolute;
+}
+.none{
+  display: none;
+}
+.img{ 
+  width: 100%;
+  border-radius: .6em;
+}
+.bg-intro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/easybank-landing-page-master/images/bg-intro-mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25em;
+}
+.bg-img-container{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 2em;
+  width: 20em;
+  height: 100%;
+  overflow: hidden;
+}
+.intro{
+ padding: 4em;
+ color: gray;
+}
+.intro h1{
+  padding-bottom: .5em;
+}
+button{
+  padding: .8em 2em ;
+  border-radius: 2em;
+  border: none;
+  color: var(--White);
+  background: linear-gradient(45deg, var(--Lime-Green)30%, cyan);
+}
+.feature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.items{
+  max-width: 20rem;
+  padding:1em 2em;
+  color: gray;
+}
+.latest-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.article{
+  max-width: 18em;
+  margin: 1em 0;
+  border-radius: .6em;
+  color: gray;
+}
+.space{
+  padding: .5em 1em;
+}
+footer{
+  background:var(--Dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+}
+.footer-div{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+  justify-content: center;
+  align-items: center;
+}
+.footer-div>ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  list-style: none;
+}
+.footer-img{
+  padding: .6em;
+}
+.ham-none{
+  display: block;
+}
+@media screen and (min-width:750px) {
+  .flex-nav{
+    display: flex;
+    justify-content:space-evenly;
+  }
+  .links{
+    position: inherit;
+    border: none;
+  }
+  .links>ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  .links>ul>a>li{
+    text-decoration: none;
+    margin: 0 1em;
+    padding: 0;
+    font-size: auto;
+  }
+  .ham-none{
+    display: none;
+  }
+  .none{
+    display: block;
+  }
+  header{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .intro{
+   width: 50%;
+  }
+  .bg-intro{
+    height: 100%;
+   width: 80%;
+   background-image: url("./images/bg-intro-desktop.svg");
+  background-size: contain;  
+  }
+  .bg-img-container{
+    width: 25em;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2,20em);
+    gap: 5em;
+  }
+  .footer-div>ul{
+    flex-direction: row;
+  }
+}
