@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Titillium+Web:wght@300&display=swap');
+/* 
+.font{
+    font-family: 'Dancing Script', cursive;
+
+    font-family: 'Titillium Web', sans-serif;
+} */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --choco-1:#b86e39;
+    --choco-2:#734320;
+    --choco-bg:#EFC8BB;
+    --ff-header:'Dancing Script', cursive;
+    --ff-text:'Titillium Web', sans-serif;
+}
+body{
+    line-height: 1.6em;
+    background:var(--choco-bg);
+    width: 100vw;
+}
+h1,
+h2,
+h3,
+h4{
+    font-family: var(--ff-header);
+    color: white;
+    /* word-spacing: 1em; */
+}
+p{
+    font-family: var(--ff-text);
+    font-size: 1.2em;
+    color: white;
+}
+h1{
+    font-size:3em;
+    text-align: center;
+    /* border: 3px solid green; */
+    padding: .3em;
+}
+.header{
+    position: relative;
+    /* height: 100vh; */
+    width: 100vw;
+    background: url("/p1/Images/hero-header.jpg");
+    background-repeat: none;
+    background-size: cover;
+}
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro{
+    /* position: absolute; */
+    height:20em;
+    width: 20em;
+    margin: 6em;
+    border-radius: 100%;
+    background-color: var(--choco-2);
+    opacity: .9;
+    color: white;
+}
+@media screen and (min-width:620px) {
+    .intro{
+        height: 30em;
+        width: 30em;
+    }
+    
+}
+.about{
+    padding: 9em  2em 2em 2em;
+    width: 100vw;
+    margin: 3em 0 3em 0;
+
+}
+.container-about{
+    max-width: 40em;
+    min-width: 15em;
+    /* border: 3px solid ; */
+    position: relative;
+}
+.img-container1{
+    width: 10em;
+    height: 10em;
+    /* border: 2px solid red; */
+    position: absolute;
+    bottom: 80%;
+    border-radius: 50%;
+    
+    
+}
+.carlio-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.about-carlio{
+    gap: .6em;
+    padding: 3em .8em .8em  .8em;
+    background: var(--choco-1);
+    border-radius: 1em;
+    
+}
+
+/* about product info */
+
+.product{
+     padding: 3em;
+     background: var(--choco-2);
+}
+.img-product-container{
+    width: 6em;
+    height: 6em;
+    position: absolute;
+    top: -3em;
+}
+.pro-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.items{
+    margin-bottom: 5em;
+    position: relative;
+    padding:2em;
+    background: white;
+    border-radius: 1em;
+    
+    /* height: 10em; */
+}
+.items h2{
+    font-size: 2.2em;
+    margin:.4em ;
+    color: var(--choco-2);
+}
+.items p{
+    color: black;
+}
+
+@media screen and (min-width:620px) {
+    .product-container{
+        flex-direction: row;
+        gap: 2em;
+        margin: 3em 3em 0 3em;
+    }
+}
+.customer-review{
+    padding: 2em;
+}
+.customer{
+    max-width: 30em;
+    min-width:20em;
+    position: relative;
+    margin: 2em;
+    
+}
+.review-header h1{
+    color: var(--choco-2);
+    font-size: 3.5em;
+}
+.customer p{
+    color: black;
+    margin-top:.5em ;
+    margin-left: .8em;
+}
+.customer h2{
+    background: var(--choco-2);
+    padding: .4em;
+    text-align: center;
+   
+}
+.customer-img{
+    width: 8em;
+    height: 8em;
+   float: right;
+   shape-outside: circle(4em);
+
+}
+.lfloat{
+    float: left;
+}
+.img-customer{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+/* contact us */
+
+.contact{
+    padding: 2em;
+    background: var(--choco-2);
+}
+.our-detail{
+    padding: 2em;
+
+}
+.our-detail h2{
+    max-width: 30em;
+    padding: .4em;
+    color: var(--choco-1);
+    margin:1em 0;
+    background: white;
+    border-radius: .2em;
+}
+.viewer{
+    padding: 0 2em;
+}
+.viewer form label h2{
+    margin-bottom: .4em;
+    font-size: 1.8em;
+}
+form input{
+    padding: .3em;
+    font-family: var(--ff-header);
+    color: var(--choco-2);
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+    background: white;
+    border-radius: .2em;
+}
+input {
+    border: 2px solid var(--choco-2);
+}
+.link-container{
+    position: relative;
+}
+.back-to-top{
+    position: fixed;
+    border-radius: 50%;
+    padding: .6em;
+    right: 2em;
+    bottom: .2em;
+}
