@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blor website</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-header: hsl(13, 100%, 72%, 100%);
+        --bg-mobile-1:hsl(237, 17%, 21%);
+        --bg-mobile-2:hsl(237, 23%, 32%);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: var(--bg-header);
+        background: var(--bg-header) url("images/bg-pattern-intro.svg") center
+          center no-repeat;
+        background-size: 80rem;
+        border-radius: 0 0 0 4rem;
+      }
+      .br-footer {
+        border-radius: 0 4rem 0 0;
+        background-color:  hsl(240, 10%, 16%);
+      }
+      .mobile{
+        background:var(--bg-mobile-1);
+        border-radius: 0 4rem 0 4rem;
+      }
+     .mobile-photo{
+       background: url("./images/bg-pattern-circles.svg") no-repeat center center ;
+       background-size: 32rem;
+     }
+    </style>
+  </head>
+  <body>
+    <header class="pb-16">
+      <nav class="flex justify-around sm:justify-around align-middle">
+        <div class="flex justify-items-start">
+          <div class="logo">
+            <img class="p-4" src="./images/logo.svg" alt="" />
+          </div>
+          <ul class="flex mx-8 py-6 gap-4 text-white hidden sm:flex">
+            <li>Overview</li>
+            <li>Company</li>
+            <li>Connect</li>
+          </ul>
+        </div>
+        <div class="buttons p-4 flex gap-6 hidden sm:flex">
+          <button>Login</button>
+          <button class="p-1 px-6 bg-white rounded-full hover:bg-opacity-0">
+            Sign Up
+          </button>
+        </div>
+        <button class="sm:hidden">
+          <img src="./images/icon-hamburger.svg" alt="" />
+        </button>
+      </nav>
+      <div class="p-20 text-white flex flex-col justify-center gap-3">
+        <h1 class="text-3xl text-center sm:text-5xl">
+          A modern publishing platform
+        </h1>
+        <p class="text-center">
+          Grow your audience and build your online brand
+        </p>
+        <div class="btns text-center">
+          <button
+            class="
+              py-2
+              px-8
+              text-black
+              rounded-full
+              bg-white
+              hover:bg-opacity-0
+            "
+          >
+            Start for Free
+          </button>
+          <button class="py-4 px-8 rounded-full hover:bg-opacity-0">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="features">
+        <h1 class="text-center text-2xl my-12">Designed for the future</h1>
+        <div
+          class="
+            flex flex-col
+            justify-items-center
+            items-center
+            px-8
+            md:flex-row-reverse md:justify-evenly md:align-middle
+          "
+        >
+          <div class="relative w-96 md:w-6/12">
+            <img src="./images/illustration-editor-desktop.svg" alt="" />
+          </div>
+          <article
+            class="w-3/5 flex flex-col justify-center align-middle gap-5"
+          >
+            <div>
+              <h3 class="text-xl font-semibold">
+                Introducing an extensible editor
+              </h3>
+              <p class="text-sm md:text-base max-w-sm">
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Robust content management</h3>
+              <p class="text-sm md:text-base max-w-sm">
+                Flexible content management enables users to easily move through
+                posts. Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With this functionality,
+                you’re in full control.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="mobile  flex flex-col relative my-24 justify-center items-center sm:flex-row justify-evenly px-8">
+        <div class=" mobile-photo px-4 w-3/5 flex justify-center items-center">
+          <img class=" relative -top-14 w-72 sm:-top-6"
+            src="./images/illustration-phones.svg"
+            alt=" a photo of svg mobile"
+          />
+        </div>
+        <div class=" w-96 text-white p-8">
+          <h1>State of the Art Infrastructure</h1>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </section>
+      <section id="more-info">
+        <div
+          class="
+            flex flex-col
+            justify-items-center
+            items-center
+            md:flex-row md:justify-around md:align-middle
+          "
+        >
+          <div class="relative w-96 md:w-6/12">
+            <img src="./images/illustration-laptop-desktop.svg" alt="" />
+          </div>
+          <article
+            class="w-3/5 flex flex-col justify-center align-middle gap-10"
+          >
+            <div>
+              <h3 class="text-xl font-semibold">Free, open, simple</h3>
+              <p class="text-sm md:text-base max-w-sm">
+                Blogr is a free and open source application backed by a large
+                community of helpful developers. It supports features such as
+                code syntax highlighting, RSS feeds, social media integration,
+                third-party commenting tools, and works seamlessly with Google
+                Analytics. The architecture is clean and is relatively easy to
+                learn.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Powerful toolingt</h3>
+              <p class="text-sm md:text-base max-w-sm">
+                Batteries included. We built a simple and straightforward CLI
+                tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="
+        br-footer
+        p-12
+        mt-5
+        gap-5
+        text-white
+        justify-center
+        items-center
+        sm:flex sm:
+        justify-evenly
+      "
+    >
+      <div class="logo">
+        <img src="./images/logo.svg" alt=" a logo image " />
+      </div>
+      <div>
+        <h2 class="mb-4 font-semibold text-lg">Product</h2>
+        <ul>
+          <li>Overview</li>
+          <li>Pricing</li>
+          <li>Marketplace</li>
+          <li>Features</li>
+          <li>Integrations</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="mb-4 font-semibold text-lg">Company</h2>
+        <ul>
+          <li>About</li>
+          <li>Team</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="mb-4 font-semibold text-lg">Connect</h2>
+        <ul>
+          <li>Contact</li>
+          <li>Newsletter</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
