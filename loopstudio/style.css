@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  background-image: url("./images/mobile-images/image-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 2em;
+}
+
+.toggle-bar {
+  display: block;
+  margin: .4em 0 0 .4em;
+}
+
+.toggle-close {
+  display: block;
+  margin: .4em 0 0 .4em;
+}
+
+.header-full-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 2em;
+}
+
+.full-bar {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: .7s ease-in-out;
+  transition: .7s ease-in-out;
+  color: white;
+}
+
+.full-bar ul {
+  position: relative;
+  top: 20%;
+  list-style: none;
+}
+
+.full-bar ul li {
+  padding: .8em 1em;
+}
+
+.show-bar {
+  display: block;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+@media screen and (min-width: 675px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .toggle-bar {
+    display: none;
+  }
+  .header {
+    width: auto;
+  }
+  .header-full-bar {
+    display: none;
+  }
+  .full-bar {
+    display: block;
+    margin: 1em 0 0 0;
+    height: auto;
+    width: auto;
+    position: relative;
+    background-color: transparent;
+  }
+  .full-bar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: .6em;
+  }
+  .full-bar ul li {
+    padding: 0;
+  }
+  .intro {
+    padding-left: 5em;
+  }
+}
+
+.vr-intro {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.vr-intro .vr {
+  max-width: 20rem;
+}
+
+.vr-intro .vr-detail {
+  position: relative;
+  max-width: 20rem;
+  text-align: left;
+  padding: .8em;
+  background-color: white;
+}
+
+.vr-intro .vr-detail p {
+  max-width: 18rem;
+  line-height: 1.1em;
+}
+
+@media screen and (min-width: 820px) {
+  header {
+    background-image: url("./images/desktop-images/image-hero.jpg");
+  }
+  .vr-detail {
+    top: -2em;
+    right: -14em;
+  }
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 0 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70%;
+  color: white;
+  font-size: 2em;
+}
+
+.intro div {
+  max-width: 6em;
+  padding: .6em;
+  border: 2px solid;
+}
+
+.creation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25rem;
+      grid-template-columns: 25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creation .button {
+  text-align: center;
+  margin: 2em;
+}
+
+.creation .button button {
+  border: 2px solid #133613;
+  padding: .4em 1em;
+  letter-spacing: .1em;
+  background-color: white;
+}
+
+@media screen and (min-width: 900px) {
+  .creation {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25rem 25rem;
+        grid-template-columns: 25rem 25rem;
+  }
+  .button {
+    grid-area: span 2;
+  }
+  .intro {
+    padding-left: 6em;
+  }
+}
+
+.our-creation {
+  position: relative;
+  margin: 1.6em;
+  width: 22em;
+  height: 8em;
+  color: white;
+  background-position: center;
+  background-size: contain;
+}
+
+.our-creation img {
+  width: 100%;
+}
+
+.our-creation h2 {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  font-family: sans-serif;
+  font-weight: 400;
+  max-width: 6em;
+}
+
+.arcade {
+  background-image: url("./images/mobile-images/image-night-arcade.jpg");
+}
+
+.soccer {
+  background-image: url("./images/mobile-images/image-soccer-team.jpg");
+}
+
+.deep {
+  background-image: url("./images/mobile-images/image-deep-earth.jpg");
+}
+
+.grid {
+  background-image: url("./images/mobile-images/image-grid.jpg");
+}
+
+.up {
+  background-image: url("./images/mobile-images/image-from-above.jpg");
+}
+
+.pocket {
+  background-image: url("./images/mobile-images/image-pocket-borealis.jpg");
+}
+
+.curiosity {
+  background-image: url("./images/mobile-images/image-curiosity.jpg");
+}
+
+.fishe {
+  background-image: url("./images/mobile-images/image-fisheye.jpg");
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  gap: 1em;
+}
+
+footer .footer-logo img {
+  width: auto;
+}
+
+footer .footer-list {
+  text-align: center;
+  list-style-type: none;
+}
+
+footer .footer-list li {
+  padding: .6rem;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .8em;
+}
+
+footer .social img {
+  width: auto;
+}
+/*# sourceMappingURL=style.css.map */

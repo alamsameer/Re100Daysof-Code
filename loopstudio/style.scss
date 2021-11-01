@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: relative;
+    background-image: url("./images/mobile-images/image-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+img{
+    width: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+.toggle-bar{
+    display:block;
+    margin: .4em 0 0 .4em;
+} 
+.toggle-close{
+    display:block;
+    margin: .4em 0 0 .4em;
+}
+.header-full-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+.full-bar{
+    display: none; 
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    transition: .7s ease-in-out;
+    color: white;
+    ul{
+        position: relative;
+       top: 20%;
+       list-style: none;
+     
+       li{
+           padding: .8em 1em;
+       }
+    }
+  
+}
+.show-bar{
+    display: block;
+    transition: .5s ease-in-out;
+}
+@media screen and (min-width:675px) {
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .toggle-bar{
+        display: none;
+    }
+    .header{
+        width: auto;
+    }    
+    .header-full-bar{
+        display: none;
+    }
+    .full-bar{
+        display:block;
+        margin: 1em 0 0 0;
+        height: auto;
+        width: auto;
+        position: relative;
+        background-color: transparent;
+        ul{
+            display: flex;
+            gap: .6em;
+            li{
+                padding: 0;
+            }
+        }
+    }
+    .intro{
+        padding-left: 5em;
+        
+    }
+}
+.vr-intro{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    .vr{
+        max-width: 20rem;
+    }
+    .vr-detail{
+        position: relative;
+        max-width: 20rem;
+        text-align: left;
+        padding: .8em;
+        background-color: white;
+        p{
+          
+            max-width: 18rem;
+            line-height: 1.1em;
+        }
+    }
+
+}
+@media screen and (min-width:820px) {
+    header{
+        background-image: url("./images/desktop-images/image-hero.jpg");
+    }
+    .vr-detail{
+        top: -2em;
+        right: -14em;
+    }
+
+    
+}
+
+.intro{
+    display: flex;
+    padding: 0 0 0 1em;
+    // justify-content: flex-start;
+    align-items: center;
+    height: 70%;
+    color: white;
+    font-size: 2em;
+    
+    div{
+        max-width: 6em;
+        padding: .6em;
+        border: 2px solid ;
+    }
+}
+.creation{
+    display: grid;
+    grid-template-columns: 25rem ;
+   justify-content: center;
+   align-items: center;
+   .button{
+       text-align: center;
+       margin: 2em;
+       button{
+           border: 2px solid rgb(19, 54, 19);
+           padding: .4em 1em;
+           letter-spacing: .1em;
+           background-color: white;
+       }
+   }
+}
+@media screen and (min-width:900px) {
+    .creation{
+        display: grid;
+        grid-template-columns: 25rem 25rem;
+    }
+    .button{
+        grid-area: span 2;
+    }
+    .intro{
+        padding-left: 6em;
+        
+    }
+    
+}
+.our-creation{
+   
+    position: relative;
+    margin: 1.6em;
+    width: 22em;
+    height: 8em;
+    color: white;
+    background-position: center;
+    background-size: contain;
+    img{
+      width: 100%;
+    }
+    h2{
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        font-family: sans-serif;
+        font-weight: 400;
+        max-width: 6em;
+    }
+}
+.arcade{
+    background-image: url("./images/mobile-images/image-night-arcade.jpg");
+}
+.soccer{
+    background-image: url("./images/mobile-images/image-soccer-team.jpg");
+}
+.deep{
+    background-image: url("./images/mobile-images/image-deep-earth.jpg");
+  
+}
+.grid{
+    background-image: url("./images/mobile-images/image-grid.jpg");
+}
+.up{
+    background-image: url("./images/mobile-images/image-from-above.jpg");
+}
+.pocket{
+    background-image: url("./images/mobile-images/image-pocket-borealis.jpg");
+}
+.curiosity{
+    background-image: url("./images/mobile-images/image-curiosity.jpg");
+}
+.fishe{
+    background-image: url("./images/mobile-images/image-fisheye.jpg");
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+    .footer-logo{
+        img{
+            width: auto;
+        }
+    }
+    .footer-list{
+        text-align: center;
+        list-style-type: none;
+        li{
+            padding: .6rem;
+        }
+    }
+    .social{
+        display: flex;
+        gap: .8em;
+        img{
+            width: auto;
+        }
+    }
+}
