@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//
+$bright-red: hsl(12, 88%, 59%);
+$dark-blue: hsl(228, 39%, 23%);
+$Dark-Grayish-Blue: hsl(227, 12%, 61%);
+$Very-Dark-Blue: hsl(233, 12%, 13%);
+$Very-Pale-Red: hsl(13, 100%, 96%);
+$Vary-Light-Gray: hsl(0, 0%, 98%);
+// global classes
+body {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  max-width: 17rem;
+  text-align: left;
+  padding: 0.2rem;
+  line-height: 1.6rem;
+  color: $Dark-Grayish-Blue;
+  font-family: sans-serif;
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  display: none;
+  transition: 2000ms ease;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: $dark-blue;
+  font-family: serif;
+}
+button {
+  padding: 0.6rem 1.6rem;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  background-color: $bright-red;
+  box-shadow: 0 0.1rem 0.6rem $bright-red;
+  &:hover {
+    background-color: $dark-blue;
+    box-shadow: 0 0.1rem 0.6rem $dark-blue;
+    transition: 300ms;
+    transform: scale(1.1);
+  }
+  &:focus {
+    transform: scale(1);
+  }
+}
+//  header
+header {
+ background-image: url("./images/bg-tablet-pattern.svg");
+ background-size: contain;
+ background-repeat: no-repeat;
+  .nav {
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: .1rem .1rem .8rem;
+  }
+  .logo-container {
+      padding: 1rem;
+    justify-content: space-between;
+  }
+  .nav-btn {
+    display: none;
+  }
+  ul {
+    display: inline-block;
+    position: fixed;
+    flex-direction: column;
+    background-color: $Vary-Light-Gray;
+    width: 15rem;
+    text-align: center;
+    height: 12rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    margin: 0.8rem;
+    box-shadow: 0.1rem 0.1rem 1rem;
+    // overflow: hidden;
+    li {
+      padding: 0.4rem;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  .info-sec {
+    padding: 1.8rem;
+    flex-direction: column-reverse;
+    .info {
+      gap: 1.2rem;
+      flex-direction: column;
+      text-align: center;
+      h1 {
+        font-size: 2rem;
+        max-width: 18rem;
+        color: $dark-blue;
+      }
+    }
+    .chart-info {
+      max-width: 15rem;
+    }
+  }
+}
+.about {
+  flex-direction: column;
+  .about-info {
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0 0 2rem 0;
+    text-align: center;
+    h2 {
+      max-width: 14rem;
+    }
+  }
+  .features {
+    flex-direction: column;
+    .item {
+      h3 {
+        background-color: $Very-Pale-Red;
+        padding: 0.6rem 0;
+        font-size: 1rem;
+        span {
+          background-color: $bright-red;
+          padding: 0.4rem 0.8rem;
+          margin-right: 4px;
+          border-radius: 1rem;
+          color: $Vary-Light-Gray;
+        }
+      }
+      p {
+        padding: 0.4rem;
+      }
+    }
+  }
+}
+.opinion {
+  flex-direction: column;
+  padding: 1rem;
+  .avatar-container {
+    padding: 3rem 1rem;
+    gap: 1rem;
+    flex-direction: column;
+    .avatar-intro {
+      padding: 1rem;
+      flex-direction: column;
+      gap: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0.1rem 0.1rem 1rem $Dark-Grayish-Blue;
+      img {
+        width: 40%;
+      }
+      p {
+        border: 2px solid $Very-Pale-Red;
+      }
+    }
+  }
+}
+.banner {
+  padding: 5rem 3rem;
+  flex-direction: column;
+  background-image: url("./images/bg-simplify-section-mobile.svg");
+  background-color: $bright-red;
+  background-repeat: no-repeat;
+  background-size: contain;
+  h1 {
+    color: $Vary-Light-Gray;
+    max-width: 12rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  button {
+    color: $bright-red;
+    background-color: #fff;
+    margin-top: 1rem;
+  }
+}
+footer{
+    padding: 2rem;
+    background-color:$Very-Dark-Blue;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    .footer-logo{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .footer-links{
+        color: $Vary-Light-Gray;
+        gap: 4rem;
+    }
+    .update-inbox{
+        input{
+            padding: .5rem 1rem;
+            border-radius: 1rem;
+            border: none;
+            margin: .7rem;
+        }
+        button{
+          height: 2rem;
+          margin-top: .6rem;
+          padding: 0 1rem;
+        }
+    }
+}
+@media screen and (min-width: 675px) {
+  header {
+    background-image: url("./images/bg-tablet-pattern.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: right;
+    .nav {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    ul {
+      position: inherit;
+      flex-direction: row;
+      width: auto;
+      height: auto;
+      padding: 0;
+      margin: 0;
+      box-shadow: 0 0 0;
+      li {
+        padding: 0 0.5rem;
+      }
+    }
+    .nav-bar {
+      display: none;
+    }
+    .nav-btn {
+      display: block;
+      height: 2.2rem;
+      margin-top: 1rem;
+    }
+    .info-sec{
+        flex-direction: row;
+        justify-content: space-around;
+        .info{
+            text-align: left;
+        }
+        .chart-info{
+           max-width: 20rem; 
+        }
+    }
+
+  }
+  .about{
+      flex-direction: row;
+      justify-content: space-around;
+      .about-info{
+        justify-content:flex-start;
+      }
+  }
+  .opinion{
+    .avatar-container{
+      display: grid;
+      grid-template-columns: repeat(2,18rem);
+    }
+  }
+  .banner{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer{
+    flex-direction: row;
+    gap: .8rem;
+    .footer-logo{
+      flex-direction: column;
+    }
+    .social-link{
+      gap: 1rem;
+    }
+    .footer-links{
+      padding: .5rem 1rem;
+      ul{
+        padding: .3rem;
+      }
+    }
+    .update-inbox{
+      justify-content: center;
+      button{
+        height: 2rem;
+        margin-top: .6rem;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+@media screen and (min-width:875px){
+  .opinion{
+    .avatar-container{
+      display: grid;
+      grid-template-columns:repeat(4,13rem);
+      gap: 1.6rem;
+    }
+  }
+  
+}
+// nav
