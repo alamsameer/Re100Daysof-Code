@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.cat-nav {
+  padding: 0.3rem;
+}
+
+main {
+  padding: 0.3rem 1rem;
+}
+
+header .cat-hero {
+  position: relative;
+  background-image: url("./images/HeroImagesm.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  border-radius: 1rem 1rem 0 0;
+}
+
+header .cat-hero .hero-info {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: white;
+}
+
+header .discover-breeds {
+  background-color: #d1cfcf;
+  border-radius: 0 0 1rem 1rem;
+}
+
+header .discover-breeds .breed-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.7rem 2.5rem;
+}
+
+header .discover-breeds .breeds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  gap: 3rem;
+  padding: 2.3rem 0;
+}
+
+header .discover-breeds .breeds .breed {
+  width: 13rem;
+  height: 10rem;
+}
+
+header .discover-breeds .breeds .breed img {
+  border-radius: 1.3rem;
+  width: 100%;
+  height: 80%;
+}
+
+.about-cat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.about-cat .why-cat {
+  line-height: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-cat .why-cat .cat-child {
+  max-width: 25rem;
+}
+
+.about-cat .about-img-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (9rem)[2];
+      grid-template-columns: repeat(2, 9rem);
+  -ms-grid-rows: (7rem)[3];
+      grid-template-rows: repeat(3, 7rem);
+  gap: .5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-cat .about-img-container figure {
+  width: 8rem;
+}
+
+.about-cat .about-img-container figure img {
+  width: 100%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem;
+  background-color: #030303;
+  border-radius: 1rem;
+}
+
+footer .creator {
+  color: white;
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 620px) {
+  header .cat-hero {
+    background-image: url("./images/HeroImagemd.png");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+  }
+  .about-cat {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 2rem 0 0 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  header .cat-hero {
+    background-image: url("./images/HeroImagelg.png");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

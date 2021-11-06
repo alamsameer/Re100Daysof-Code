@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.cat-nav {
+  padding: 0.3rem;
+
+}
+main {
+  padding: 0.3rem 1rem;
+}
+header {
+  .cat-hero {
+    position: relative;
+    background-image: url("./images/HeroImagesm.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    border-radius: 1rem 1rem 0 0;
+    .hero-info {
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      color: white;
+    }
+  }
+  .discover-breeds {
+    background-color: rgb(209, 207, 207);
+    border-radius: 0 0 1rem 1rem;
+    .breed-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.7rem 2.5rem;
+    }
+    .breeds {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      gap: 3rem;
+      padding: 2.3rem 0;
+      .breed {
+        width: 13rem;
+        height: 10rem;
+        img {
+          border-radius: 1.3rem;
+          width: 100%;
+          height: 80%;
+        }
+      }
+    }
+  }
+}
+.about-cat{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:1rem 0;
+  gap: 1rem;
+  .why-cat{
+    line-height: 1.6rem;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    
+    .cat-child{
+      max-width: 25rem;
+    }
+  }
+  .about-img-container{
+    display:grid;
+    grid-template-columns: repeat(2, 9rem);
+    grid-template-rows: repeat(3,7rem);
+    gap: .5rem;
+    justify-content: center;
+    figure{
+     width: 8rem;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem ;
+  background-color: rgb(3, 3, 3);
+  border-radius: 1rem;
+  .creator{
+    color: white;
+    padding-top: 1rem;
+
+  }
+}
+@media screen and (min-width: 620px) {
+  header {
+    .cat-hero {
+      background-image: url("./images/HeroImagemd.png");
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+    }
+  }
+  .about-cat{
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 0 0 0;
+    align-items: center;
+
+  
+  }
+}
+@media screen and (min-width: 1240px) {
+  header {
+    .cat-hero {
+      background-image: url("./images/HeroImagelg.png");
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+    }
+  }
+}
