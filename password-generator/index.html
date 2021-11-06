@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="password.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <section class="container">
+        <h1 class="center">password generator</h1>
+        <div class="result-container flex-center" >
+            <span id="result" class="result">result</span>
+            <button class="btn" id="clipboard">
+                <i class="fa-solid fa-clipboard fa"></i>
+            </button>
+        </div>
+        <div class="length-container flex-center" >
+            <label for="">password length</label>
+            <input type="number" min="3" max="15" value="15" id="length">
+        </div>
+        <div class="uppercase flex-center" >
+            <label for="">Include uppercase letter</label>
+            <input type="checkbox" id="uppercase">
+        </div>
+        <div class="lowercase flex-center" >
+            <label for="">Include lowercase letter</label>
+            <input type="checkbox" id="lowercase">
+        </div>
+        <div class="number flex-center" >
+            <label for="">Include number </label>
+            <input type="checkbox" id="number">
+        </div>
+        <div class="symbol flex-center" >
+            <label for="">Include symbol </label>
+            <input type="checkbox" id="symbol">
+        </div>
+      <div class="center">
+        <button class="GenPassword ">Generate-password</button>
+      </div>
+
+    </section>
+    <script src="password.js"></script>
+</body>
+</html>
