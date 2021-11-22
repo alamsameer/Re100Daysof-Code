@@ -1,0 +1,87 @@
+@import "nav";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("./assets/technology/background-technology-mobile.jpg")
+    center no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  overflow-x: hidden;
+  padding: .2rem;
+}
+section{
+  display: flex;
+  flex-direction: column-reverse;
+}
+p,li{
+  font-family:sans-serif;
+ }
+ h1,h2,h3{
+     font-family: 'Courier New', Courier, monospace;}
+ 
+header{
+  margin: 1.4rem;
+  h1{
+    text-align: start;
+    padding: 1rem;
+  }
+}
+.launch-img{
+  padding: 4rem;
+  text-align: center;
+    img{
+        width: 20rem;
+    }
+}
+.info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    ul{
+      list-style: none;
+      padding:0 1.2rem;
+      li{
+        background-color: aliceblue;
+        color: black;
+        margin: .6rem;
+        padding: .9rem 1.1rem;
+        border-radius: 100%;
+      }
+    }
+    .info{
+      p{
+        max-width: 25rem;
+        padding: .5rem;
+        line-height: 1.5rem;
+      }
+    }
+}
+@media screen and(max-width:414px) {
+  .info-container{
+    flex-direction: column;
+    ul{
+      display: flex;
+    }
+  }
+  .launch-img{
+    img{
+      width: 80%;
+    }
+  }
+}
+@media screen and (min-width:890px){
+    section{
+      justify-content: space-around;
+      flex-direction: row;
+  }
+}
+@media screen and(min-width:680px) {
+  body {
+    background: url("./assets/technology/background-technology-desktop.jpg")
+      center no-repeat;}
+}
