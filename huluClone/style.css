@@ -1,0 +1,485 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p li {
+  font-family: sans-serif;
+}
+
+.green {
+  color: green;
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  color: white;
+  width: 100%;
+  background: url("./img/header.jpg") center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .intro {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+header .intro img {
+  width: 15rem;
+}
+
+header .intro button {
+  padding: 1rem;
+  background-color: white;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+header .intro button:hover {
+  background-color: #ada9a9;
+}
+
+.intro-banner {
+  background-color: #10102e;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.intro-banner .banner-img figure {
+  width: 20rem;
+  padding: 1rem;
+}
+
+.intro-banner .banner-img figure img {
+  width: 100%;
+}
+
+.intro-banner .banner-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.intro-banner .banner-info h3 {
+  font-size: 1.6rem;
+}
+
+.intro-banner .get-bundle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 0;
+}
+
+.intro-banner .get-bundle a {
+  display: block;
+}
+
+.intro-banner .get-bundle button {
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 1rem;
+  color: white;
+}
+
+.intro-banner .get-bundle button:hover {
+  opacity: 0.6;
+}
+
+.movies-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  background: #080808;
+  color: white;
+}
+
+.movies-category .moviesIntro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.6rem;
+  padding: 1rem;
+}
+
+.movies-category .moviesIntro p {
+  max-width: 25rem;
+  text-align: center;
+}
+
+.movies-category .moviesIntro h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.movies-category .movies-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 18rem;
+      grid-template-columns: 18rem;
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+  gap: 1.2rem;
+  place-items: center;
+  padding: 2rem;
+}
+
+.movies-category .movies-container figure img {
+  width: 100%;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.7rem 2rem;
+  background: #332c2c;
+}
+
+.feature div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem;
+  gap: 1rem;
+  border: 4px solid #2f802f;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.feature div p {
+  text-align: center;
+  max-width: 35rem;
+  font-size: 1.1rem;
+}
+
+.feature div h2 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.sports-category {
+  background: url("./img/live-sports-small.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 8rem 1rem;
+}
+
+.sports-category div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.sports-category div p {
+  max-width: 25rem;
+}
+
+.sports-category div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sports-category div ul li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem .5rem;
+  background-color: white;
+  margin: 1rem;
+  border-radius: 50% 50%;
+}
+
+.sports-category div ul li img {
+  width: 3rem;
+}
+
+.footer {
+  background-color: #f1e5e5;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.footer-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-lists ul {
+  padding: 1rem;
+  list-style: none;
+}
+
+.footer-lists ul li {
+  padding: .6rem;
+}
+
+.footer-lists ul li a {
+  color: grey;
+  text-decoration: none;
+}
+
+.list-head {
+  font-size: 1.3rem;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-icons a {
+  margin: 1rem;
+  color: grey;
+}
+
+@media screen and (min-width: 760px) {
+  .intro-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .intro-banner .banner-info {
+    padding: 1rem;
+  }
+  .movies-category .moviesIntro h2 {
+    font-size: 4rem;
+  }
+  .movies-category .movies-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 18rem 18rem;
+        grid-template-columns: 18rem 18rem;
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+  }
+  .feature div h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .sports-category {
+    background: url("./img/live-sports.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-lists ul {
+    padding: 1rem;
+    list-style: none;
+    height: 100%;
+  }
+  .footer-lists ul li {
+    padding: .6rem;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .movies-category .movies-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (18rem)[4];
+        grid-template-columns: repeat(4, 18rem);
+  }
+  .feature div h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
