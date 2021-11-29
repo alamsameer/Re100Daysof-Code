@@ -5,6 +5,7 @@ I have made this repo to contain  all the  projects of 100dayofcode , which i po
 |  projects |	links   	|   	
 |:-----------:|:-------:|	
 |space-Tour|[link](https://vigilant-montalcini-ae42c2.netlify.app/index.html)
+|Hulu-Clone|[link](https://angry-goldberg-c55235.netlify.app)
 | Manage landing page   	    |[link](https://zen-torvalds-c4c779.netlify.app/)   	|
 |   password generator	    | [link](https:password-generator-mmjidkbme-sam-cody.vercel.app/)  	| 
 | launching  timer|[link](https://eager-goldstine-2194e3.netlify.app/) |
